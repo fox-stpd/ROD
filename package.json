@@ -20,10 +20,13 @@
     "sequelize": "^6.12.0-alpha.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+"start": "node index.js",
+"server": "nodemon index.js",
+"client": "npm run start —prefix client",
+"client:install": "npm install —prefix client",
+"client:build": "npm run build —prefix client",
+"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run client:install && npm run client:build",
+"dev": "concurrently \"npm run server\" \"npm run client\""
   },
 
   "devDependencies": {
