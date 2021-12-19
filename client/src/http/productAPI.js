@@ -1,6 +1,6 @@
-import {$authHost, $host} from "./index";
-import jwt_decode from "jwt-decode";
-import product from "../pages/Product";
+import {$authHost, $host} from "./index";// eslint-disable-next-line
+import jwt_decode from "jwt-decode";// eslint-disable-next-line
+import product from "../pages/Product";// eslint-disable-next-line
 import basket from "../pages/Basket";
 
 export const createType = async (type) => {
