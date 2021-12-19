@@ -1,6 +1,7 @@
-import React, {useContext, useState} from 'react';
+// eslint-disable-next-line
+import React, {useContext, useState} from 'react';// eslint-disable-next-line
 import {Button, Form, Modal} from "react-bootstrap";
-import {Context} from "../../index";
+import {Context} from "../../index";// eslint-disable-next-line
 import {createType} from "../../http/productAPI";
 import data from "bootstrap/js/src/dom/data";
 
