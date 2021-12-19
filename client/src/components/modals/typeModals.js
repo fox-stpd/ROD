@@ -1,8 +1,8 @@
 // eslint-disable-next-line
 import React, {useContext, useState} from 'react';// eslint-disable-next-line
-import {Button, Form, Modal} from "react-bootstrap";
-import {Context} from "../../index";// eslint-disable-next-line
-import {createType} from "../../http/productAPI";
+import {Button, Form, Modal} from "react-bootstrap";// eslint-disable-next-line
+import {Context} from "../../index";
+import {createType} from "../../http/productAPI";// eslint-disable-next-line
 import data from "bootstrap/js/src/dom/data";
 
 const TypeModals = ({show, onHide}) => {
