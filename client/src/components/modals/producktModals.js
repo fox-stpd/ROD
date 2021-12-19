@@ -1,9 +1,9 @@
 import React, {useContext, useEffect, useState} from 'react';
 import {Button, Dropdown, Form, Modal, Row} from "react-bootstrap";
 import {Context} from "../../index";
-import Col from "react-bootstrap/Col";
+import Col from "react-bootstrap/Col"; // eslint-disable-next-line
 import {createProduct, fetchCountry, fetchProduct, fetchTypes} from "../../http/productAPI";
-import {observer} from "mobx-react-lite";
+import {observer} from "mobx-react-lite"; // eslint-disable-next-line
 import data from "bootstrap/js/src/dom/data";
 
 const ProducktModals = observer( ({show, onHide}) => {
@@ -11,14 +11,14 @@ const ProducktModals = observer( ({show, onHide}) => {
     const {product} = useContext(Context)
     const [name , setName] = useState('')
     const [price , setPrice] = useState('')
-    const [file , setFile] = useState(null)
-    const [type , setType] = useState(null)
+    const [file , setFile] = useState(null)// eslint-disable-next-line
+    const [type , setType] = useState(null)// eslint-disable-next-line
     const [country , setCountry] = useState(null)
     const [info , setInfo] = useState([])
 
     useEffect(()=> {
         fetchTypes().then(data => product.setTypes(data))
-        fetchCountry().then(data => product.setCountries(data))
+        fetchCountry().then(data => product.setCountries(data))// eslint-disable-next-line
     }, [])
 
     const addInfo = () => {
