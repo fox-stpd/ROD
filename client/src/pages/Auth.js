@@ -18,12 +18,12 @@ const Auth = observer (
     const [password, setPassword] = useState('')
     const click = async () => {
 
-        try {
+        try {// eslint-disable-next-line
             let data;
 
-            if (islogin) {
+            if (islogin) {// eslint-disable-next-line
                 const data = await login(email,password)
-            } else {
+            } else {// eslint-disable-next-line
                 const data = await registration(email,password)
             }
             user.setUser(user)
