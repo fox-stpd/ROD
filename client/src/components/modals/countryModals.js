@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Button, Form, Modal} from "react-bootstrap";
+import {Button, Form, Modal} from "react-bootstrap"; // eslint-disable-next-line
 import {createCountry, createType} from "../../http/productAPI";
 
 const CountryModals = ({show, onHide}) => {
