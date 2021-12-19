@@ -18,13 +18,13 @@ const Pharmacy = observer(() => {
         fetchCountry().then(data => product.setCountries(data))
         fetchProduct(null, null, 1, 8).then(data => {
             product.setProducts(data.rows)
-            product.setTotalCount(data.count)})
+            product.setTotalCount(data.count)})// eslint-disable-next-line
     },[])
 
     useEffect(()=> {
         fetchProduct(product.SelectedType.id, product.SelectedCountry.id, product.page, 8).then(data => {
             product.setProducts(data.rows)
-            product.setTotalCount(data.count)})
+            product.setTotalCount(data.count)})// eslint-disable-next-line
     } , [product.page, product.SelectedType, product.SelectedCountry])
     return (
         <Container>
