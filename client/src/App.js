@@ -16,7 +16,7 @@ const App = observer(() =>{
             check().then(data => {
                 user.setUser(true)
                 user.setIsAuth(true)
-            }).finally(()=> setLoading(false))
+            }).finally(()=> setLoading(false)) // eslint-disable-next-line
         }, [] )
 
 
