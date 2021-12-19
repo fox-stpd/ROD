@@ -11,6 +11,7 @@
     "dotenv": "^10.0.0",
     "find-config": "^1.0.0",
     "jwt-decode": "^3.1.2",
+    "main": "file:..",
     "mobx": "^6.3.8",
     "mobx-react-lite": "^3.2.2",
     "react": "^17.0.2",
