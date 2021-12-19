@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -19,19 +19,8 @@
     "pg-hstore": "^2.3.4",
     "sequelize": "^6.12.0-alpha.1"
   },
-  "scripts": {
-"start": "node index.js",
-"server": "nodemon index.js",
-"client": "npm run start —prefix client",
-"client:install": "npm install —prefix client",
-"client:build": "npm run build —prefix client",
-"heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm run client:install && npm run client:build",
-"dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "description": ""
-} 
-
+}
