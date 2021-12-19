@@ -1,18 +1,18 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';// eslint-disable-next-line
 import {Button, Card, Col, Container, Image} from "react-bootstrap";
 import Row from "react-bootstrap/Row";
 import {useParams} from 'react-router-dom'
-import {fetchOneProduct} from "../http/productAPI";
+import {fetchOneProduct} from "../http/productAPI";// eslint-disable-next-line
 import basket from "./Basket";
 
 const Product = () => {
     const [product, setProduct] = useState({info: []})
     const {id} = useParams()
     useEffect(()=> {
-        fetchOneProduct(id).then(data => setProduct(data))
+        fetchOneProduct(id).then(data => setProduct(data))// eslint-disable-next-line
         }, []
     )
-
+// eslint-disable-next-line
     const addBasket = () => {
         const formData = new FormData()
         formData.append('basketId', product.basket )
