@@ -1,6 +1,5 @@
 const {Sequelize} = require('sequelize')
 
-var {Pool} = require('pg');
 
 // module.exports = new Sequelize(
 //     process.env.DB_NAME,
@@ -19,10 +18,4 @@ var {Pool} = require('pg');
 //         }
 //     }
 
-const pool = new Sequelize({
-    connectionString: process.env.DATABASE_URL,
-    dialect: 'postgres',
-    ssl: {
-        rejectUnauthorized: false
-    }
-});
+module.exports = new Sequelize(process.env.DATABASE_URL);
