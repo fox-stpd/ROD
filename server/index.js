@@ -16,7 +16,8 @@ console.log(path.join(__dirname,'..', 'client', 'build'));
 console.log(path.resolve(__dirname, '..','client', 'build', 'index.html'));
 
 app.use(cors({
-    origin: true
+    origin:['http://localhost:5000'],
+    credentials: true
 }))
 
 app.use(function(req, res, next) {
