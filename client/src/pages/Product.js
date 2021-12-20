@@ -23,7 +23,7 @@ const Product = () => {
         <Container className={"mt-3"}>
             <Row>
                 <Col md={8}>
-                    <Image width={300} height={300} source={require('../images/' + product.img)}/>
+                    <Image width={300} height={300} source={{ uri: process.env.REACT_APP_API_URL + product.img}}/>
                     <Row>
                         <h2>{product.name}</h2>
                     </Row>
