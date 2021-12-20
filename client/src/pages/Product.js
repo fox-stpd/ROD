@@ -23,7 +23,7 @@ const Product = () => {
         <Container className={"mt-3"}>
             <Row>
                 <Col md={8}>
-                    <Image width={300} height={300} src={process.env.REACT_APP_API_URL + product.img}/>
+                    <Image width={300} height={300} src={"http://localhost:5000/" + product.img}/>
                     <Row>
                         <h2>{product.name}</h2>
                     </Row>
