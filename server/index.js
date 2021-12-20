@@ -15,6 +15,10 @@ console.log(path.join(__dirname,'..', 'client', 'build'));
 
 console.log(path.resolve(__dirname, '..','client', 'build', 'index.html'));
 
+app.use(cors({
+    origin: true
+}))
+
 app.use('/', express.static(path.join(__dirname,'..', 'client', 'build')));
 
 app.get('*', (req, res) =>{
