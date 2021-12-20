@@ -5,7 +5,7 @@ const $host = axios.create({
 })
 
 const $authHost = axios.create({
-    baseURL: "https://pharmacy-nntu.herokuapp.com/"
+    baseURL: process.env.REACT_APP_API_URL
 })
 
 const authInterceptor = config => {
