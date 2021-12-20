@@ -1,9 +1,6 @@
 const {Sequelize} = require('sequelize')
 
-var pg = require('pg');
-pg.defaults.ssl = true;
-
-
+var {Pool} = require('pg');
 
 // module.exports = new Sequelize(
 //     process.env.DB_NAME,
@@ -22,11 +19,11 @@ pg.defaults.ssl = true;
 //         }
 //     }
 
-module.exports = new Sequelize({
+const pool = new Sequelize({
     connectionString: process.env.DATABASE_URL,
     ssl: {
         require: true,
         rejectUnauthorized: false
     }
     }
-)
+);
