@@ -4,6 +4,7 @@ var pg = require('pg');
 pg.defaults.ssl = true;
 
 
+
 module.exports = new Sequelize(
     process.env.DB_NAME,
     process.env.DB_USER,
