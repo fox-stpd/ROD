@@ -8,8 +8,11 @@ const router = require('./routes/index')
 const errorHandler = require('./meddleware/ErrorHandlingMaddeleware')
 const path = require('path')
 
-const PORT = process.env.PORT || 5000
+const PORT = app.listen(process.env.PORT || 5000);
+
 const app = express()
+
+
 // app.use(express.static(path.join(__dirname, 'client/build')));
 console.log(path.join(__dirname,'..', 'client', 'build'));
 
