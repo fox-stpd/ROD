@@ -21,9 +21,8 @@ var {Pool} = require('pg');
 
 const pool = new Sequelize({
     connectionString: process.env.DATABASE_URL,
+    dialect: 'postgres',
     ssl: {
-        require: true,
         rejectUnauthorized: false
     }
-    }
-);
+});
